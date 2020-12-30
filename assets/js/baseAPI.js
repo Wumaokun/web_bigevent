@@ -12,7 +12,7 @@ $.ajaxPrefilter(function (options) {
         }
     }
 
-    opener.complete = function (res) {
+    options.complete = function (res) {
         if (
             res.responseJSON.status === 1 &&
             res.responseJSON.message === '身份认证失败!'

@@ -45,7 +45,7 @@ function getUserInfo() {
       //1.获取用户的名称
       const name = user.nickname || user.username
       //2.设置欢迎的文本
-      $('#welcome').html('欢迎${name}')
+      $('#welcome').html(`欢迎${name}`)
       //3.按需渲染用户的头像
       if (user.user_pic) {
           //3.1渲染图片头像
